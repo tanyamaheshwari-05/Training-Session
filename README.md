@@ -64,6 +64,24 @@ Covers **Git Bash installation and configuration** on Windows.
 - Improving terminal productivity
 
 ---
+### 🔹 linux-commands branch
+Focuses on commonly used **Linux terminal commands**, file system navigation, permissions, and process management.
+
+#### 📝 Topics Covered
+- File and directory operations (`ls`, `cd`, `pwd`, `mkdir`, `rmdir`)
+- File handling (`touch`, `cp`, `mv`, `rm`)
+- File viewing commands (`cat`, `less`, `head`, `tail`)
+- Permissions and ownership (`chmod`, `chown`)
+- Searching and filtering (`grep`, `find`)
+- Process and system commands (`ps`, `top`, `kill`, `df`, `du`)
+
+#### 🎯 Learning Outcomes
+- Navigating the Linux file system efficiently
+- Managing files and directories using terminal
+- Understanding file permissions and access control
+- Executing system-level commands confidently
+
+---
 
 ## 🎯 Overall Learning Outcomes
 
