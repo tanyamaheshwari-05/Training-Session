@@ -1,0 +1,92 @@
+FILE AND DIRECTORY COMMANDS
+
+# List all files in a long listing (detailed) format
+Use case - Displays content of folder in details format providing file/dir permission, ownership
+information, timestamp, hidden files
+ls -al
+# Display the present working directory
+Use case - you are on command prompt and before doing any operation like rm or mkdir in that
+case to identify your current working directory pwd display present working directory
+pwd
+# Create a directory
+mkdir directory
+# Remove (delete) file permanently.
+rm file
+# Copy file1 to file2
+cp file1 file2
+# Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2
+mv file1 file2
+# Create symbolic link to linkname
+Use case - You install two different version of same application on the system and you are
+expecting to use latest version of application to be active
+ln -s /path/to/file linkname
+# Create an empty file or update the access and modification times of file.
+touch file
+# View the contents of file
+
+cat file
+# Browse through a text file
+less file
+
+# Display the first 10 lines of file
+Use case - Quickly look into the file what is inside without actually opening file
+head file
+# Display the last 10 lines of file
+tail file
+# Create tar named archive.tar containing directory.
+tar cf archive.tar directory
+# Switch back to previous working directory
+cd -
+# Go back to home directory
+cd ~
+# List of all open files
+lsof
+# Show free and used space on mounted filesystems
+df -h
+# Display disk usage for all files and directories in human readable format
+Use case - Identify which directory / file consuming maximum disk space during disk cleanup
+activity.
+du -ah
+
+PROCESS MANAGEMENT
+
+# Display all the currently running processes on the system.
+ps -elf
+# Display and manage the top processes in real time
+top
+# Kill process with process ID of pid
+kill pid
+# Start program in the background
+program &
+# Display stopped or background jobs
+bg
+# Brings the most recent background job to foreground
+fg
+# Running multiple command in single command
+command1 && command2
+command1; command2
+# Print process hierarchy
+pstree
+# Display virtual memory statistics
+vmstat 1
+# Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
+free -h
+# Execute commands, showing periodic updates
+watch “commands”
+# Show the current date and time
+date
+
+FIND / SEARCH / REPLACE
+
+# Search for pattern in file
+grep pattern file
+# Search recursively for pattern in directory
+grep -r pattern directory
+# Find files and directories by name
+locate name
+# Find files in /home/john that start with "prefix".
+find /home/john -name 'prefix*'
+# Find files larger than 100MB in /home
+find /home -size +100M
+# Find string1 and replace with string2 from file
+sed s/string1/string2/g file.
